@@ -1,0 +1,302 @@
+
+.mainnav{
+    position: sticky;
+    top: 0;
+}
+.topnav{
+    display: flex;
+    color: white;
+    background-color: rgb(6, 6, 95);
+    justify-content: flex-start;
+    padding: 15px;
+    margin-top: 0px;
+}
+.navitems{
+    padding-right: 20px;
+}
+.topnav2{
+    display: flex;
+    color: white;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: none;
+    
+}
+.button2{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: #4054B2;
+    color: white;
+    display: inline-block;
+    border-width: 0px;
+    margin-left: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.button3{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: #fbfbfb00;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    border-width: 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.button3 :hover{
+    border-width: 5px;
+    border-bottom: 5px purple;
+    cursor: pointer;
+    transition: ease;
+}
+.flexdiv{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-content: flex-end;
+}
+.flexitem2 img{
+    max-width: 90%;
+    height: 400px;
+}
+
+.button1{
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background-color: #4054B2;
+    color: white;
+    display: inline-block;
+    border-width: 0px;
+}
+.flexitem1{
+    text-align: left;
+    margin-left: 30px;
+    max-width: 80%;
+    height: auto;
+}
+.item1{
+    font-family: roboto,Sans-serif;
+    font-size: 59px;
+    font-weight: 500;
+}
+.item2{
+    font-family: roboto,Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    width: 400px;
+}
+
+.div2{
+    background-image: url("connect.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.div2 h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div2 h2,h3{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.div3{
+    background-color: rgb(230, 216, 243);
+    margin: 0%;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.flex2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.flex2 h2{
+    color: #595caa;
+    font-family: roboto,Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.flex2 h5{
+    text-align: center;
+    color: #353030;
+    font-family: roboto,Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.highlight {
+    color: green;
+    font-weight: 700;
+}
+.column{
+   width: 300px;
+}
+.column img{
+    height: 100px;
+    width: 100px;
+}
+.div4 h1{
+    text-align: center;
+    font-size: 40px;
+}
+.div4{
+    text-align: center;
+    font-weight: lighter;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    text-align: center;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+.grid-item img{
+    width: 100%;
+    height: auto;
+}
+.slideshow1{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 0px;
+}
+.info1{
+    align-items: center;
+    text-align: left;
+    background-image: url("mumbai.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.info1 h2{
+    font-family: roboto,Sans-serif;
+    font-size: 75px;
+    font-weight: 400;
+}
+.info1 h3{
+    font-family: roboto,Sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.info1 h4{
+    font-family: roboto,Sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.slideshow2{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 0px;
+}
+.info2{
+    align-items: center;
+    text-align: left;
+    background-image: url("nyc.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.info2 h2{
+    font-family: roboto,Sans-serif;
+    font-size: 75px;
+    font-weight: 400;
+}
+.info2 h3{
+    font-family: roboto,Sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.info2 h4{
+    font-family: roboto,Sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.slideshow3{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 0px;
+}
+.info3{
+    align-items: center;
+    text-align: left;
+    background-image: url("london.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+}
+.info3 h2{
+    font-family: roboto,Sans-serif;
+    font-size: 75px;
+    font-weight: 400;
+}
+.info3 h3{
+    font-family: roboto,Sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.info3 h4{
+    font-family: roboto,Sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.footer{
+    display: flex;
+    height: 30px;
+    background-color: #353030;
+    padding: 10px;
+    align-items: center;
+    color: rgba(240, 248, 255, 0.543);
+    justify-content: space-between;
+}
+.footeritem:hover{
+    color: rgb(240, 248, 255);
+    cursor: pointer;
+}
+.footeritem1:hover{
+    color: rgb(240, 248, 255);
+    cursor: pointer;
+}
+.footeritem2:hover{
+    color: rgb(240, 248, 255);
+    cursor: pointer;
+}
+.footeritem3:hover{
+    color: rgb(240, 248, 255);
+    cursor: pointer;
+}
+.footeritem1, .footeritem2, .footeritem3{
+   padding: 20px;
+}

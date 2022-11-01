@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="mainnav">
-            <div class="topnav">
+            <div class="topnav" >
                 <i class='fas fa-phone navitems'>&nbsp; +16467973067</i>
                 <i class='fas fa-envelope-square navitems'>&nbsp; Hello@WLCtechnology</i>
                 <i class='fas fa-map-marker-alt navitems'>&nbsp; 211 E 43rd St 7th 321, New York, NY 10017, USA</i>
@@ -21,6 +21,9 @@
                 <button class="button3">Apply For Jobs</button>
                 <button class="button2">Hire Developers</button>
                 </div>
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </div>
         </div>
         <div class="flexdiv">
@@ -77,9 +80,10 @@
                 <div class="grid-item"><img src="js.webp"></div>
               </div>
         </div>
-        <div class="slideshow1">
+        <div class="slideshow-container">
+        <div class="slideshow1 mySlides fade ">
             <div class="image">
-                <img src="mumbaibldg.jpg" style="width: 95%">
+                <img src="mumbaibldg.jpg" style="width: 100%">
             </div>
             <div class="info1">
                 <h2>Mumbai</h2>
@@ -89,9 +93,9 @@
                 <i class='fas fa-envelope-square navitems'>&nbsp; Hello@WLCtechnology</i>
             </div>
         </div>
-        <div class="slideshow2">
+        <div class="slideshow2 mySlides fade">
             <div class="image">
-                <img src="newyorkbldg.webp" style="width: 95%">
+                <img src="newyorkbldg.webp" style="width: 100%">
             </div>
             <div class="info2">
                 <h2>New York</h2>
@@ -101,9 +105,9 @@
                 <i class='fas fa-envelope-square navitems'>&nbsp; Hello@WLCtechnology</i>
             </div>
         </div>
-        <div class="slideshow3">
+        <div class="slideshow3 mySlides fade">
             <div class="image">
-                <img src="londonbldg.jpg" style="width: 95%">
+                <img src="londonbldg.jpg" style="width: 100%">
             </div>
             <div class="info3">
                 <h2>London</h2>
@@ -113,23 +117,44 @@
                 <i class='fas fa-envelope-square navitems'>&nbsp; Hello@WLCtechnology</i>
             </div>
         </div>
-        <div class="slideshow-container">
-            
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            <br>
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-              </div>
-              <script>
-                let slideIndex = 1;
-                showSlides(slideIndex);
-                
-               
-                </script>              
-        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+       </div>
+       <br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "grid";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
         <div class="footer">
             <div class="footeritem" style="margin-left: 20px;">
                 @ All Rights Reserved
